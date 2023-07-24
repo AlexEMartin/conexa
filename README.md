@@ -4,6 +4,7 @@
 ### Tailwind
 ### React Query
 ### Context API
+### Vitest
 
 - Deploy: https://conexa-technical-assessment.netlify.app/
 
