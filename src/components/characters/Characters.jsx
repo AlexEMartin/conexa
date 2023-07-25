@@ -43,7 +43,7 @@ const Characters = (props) => {
           Previous Page
         </button>
         <button
-          className="absolute top-0 right-0 mr-8 mt-4 border-2 border-black p-1 rounded-md lg:w-28 w-20 bg-black text-green-400 lg:text-base text-xs hover:bg-white hover:text-black transition-all duration-300 ease"
+          className="absolute top-0 right-0 lg:mr-8 mr-4 mt-4 border-2 border-black p-1 rounded-md lg:w-28 w-20 bg-black text-green-400 lg:text-base text-xs hover:bg-white hover:text-black transition-all duration-300 ease"
           onClick={() => {
             if (page < data.info.pages) {
               setPage(page + 1);
