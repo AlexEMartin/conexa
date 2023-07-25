@@ -36,14 +36,14 @@ const Characters = (props) => {
           </div>
         )}
         <button
-          className="absolute top-0 left-0 ml-4 mt-4 border-2 border-black p-1 rounded-md w-28 bg-black text-green-400 hover:bg-white hover:text-black transition-all duration-300 ease"
+          className="absolute top-0 left-0 ml-4 mt-4 border-2 border-black p-1 rounded-md lg:w-28 w-20 bg-black text-green-400 lg:text-base text-xs hover:bg-white hover:text-black transition-all duration-300 ease"
           onClick={() => setPage((old) => Math.max(old - 1, 1))}
           disabled={page === 1}
         >
           Previous Page
         </button>
         <button
-          className="absolute top-0 right-0 mr-8 mt-4 border-2 border-black p-1 rounded-md w-28 bg-black text-green-400 hover:bg-white hover:text-black transition-all duration-300 ease"
+          className="absolute top-0 right-0 mr-8 mt-4 border-2 border-black p-1 rounded-md lg:w-28 w-20 bg-black text-green-400 lg:text-base text-xs hover:bg-white hover:text-black transition-all duration-300 ease"
           onClick={() => {
             if (page < data.info.pages) {
               setPage(page + 1);
