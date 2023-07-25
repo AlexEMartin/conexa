@@ -15,11 +15,11 @@ function App() {
 
   return (
     <div className="w-full h-full flex justify-center items-center flex-col">
-      <div className="w-full h-[500px] flex justify-center items-center">
+      <div className="w-full xl:mt-0 mt-48 xl:h-[500px] h-[380px] flex justify-center items-center xl:flex-row flex-col">
         <Characters number="1" />
         <Characters number="2" />
       </div>
-      <div className="w-full flex justify-start items-start">
+      <div className="w-full xl:mt-0 mt-48 flex justify-start items-start">
         <div className="w-1/3 bg-green-200 text-center">
           <h2 className="my-4">Character #1 - Only Episodes</h2>
           <div className="w-full bg-white flex items-start flex-col">

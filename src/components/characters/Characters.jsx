@@ -13,15 +13,15 @@ const Characters = (props) => {
   });
 
   return (
-    <div className="relative w-1/2 h-full flex flex-col">
+    <div className="relative xl:border-none border-8 border-black xl:w-1/2 w-full h-full flex flex-col">
       <h2 className="m-auto text-2xl my-4">Character # {props.number}</h2>
-      <div className="overflow-auto">
+      <div className="overflow-auto border-t-4 border-black">
         {isLoading ? (
           <div>Loading...</div>
         ) : isError ? (
           <div>Error: {error.message}</div>
         ) : (
-          <div className="w-full grid grid-cols-2 place-items-center">
+          <div className="w-full grid xl:grid-cols-2 grid-cols-1 place-items-center">
             {data.results.map((c) => (
               <Card
                 key={Math.random() * 1000}
