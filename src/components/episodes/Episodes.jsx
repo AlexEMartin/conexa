@@ -60,14 +60,11 @@ const Episodes = () => {
                     ))}
                 </div>
               ))}
-            {noMatch &&
-              shared[0].length === 0 &&
-              shared[1].length === 0 &&
-              shared[2].length === 0 && (
-                <p className="text-black mx-auto mt-2 text-xl">
-                  No shared episodes
-                </p>
-              )}
+            {noMatch && shared.every((e) => e.length === 0) && (
+              <p className="text-black mx-auto mt-2 text-xl">
+                No shared episodes
+              </p>
+            )}
           </div>
         </div>
       </div>
