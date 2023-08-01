@@ -59,7 +59,7 @@ const Card = ({ episodes, image, name, status, species, storage }) => {
 
   return (
     <div
-      className="w-80 h-28 my-4 hover:bg-black bg-white hover:text-green-500 text-black border-2 border-black flex justify-start items-center rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ease"
+      className="w-80 h-28 my-4 hover:bg-black active:relative active:top-0.5 bg-white hover:text-green-500 text-black border-2 border-black flex justify-start items-center rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ease"
       onClick={() => {
         getEpisodes(episodes);
       }}
